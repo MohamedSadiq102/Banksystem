@@ -1,0 +1,9 @@
+#meldung{
+    -fx-font-size: 15px;
+    -fx-fill: red;
+}
+
+.Button{
+    -fx-background-color: green;
+}
+

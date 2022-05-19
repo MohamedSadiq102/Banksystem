@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankprojekt.control.Controller">
+<opaqueInsets>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+</opaqueInsets>
+<children>
+    <Text fx:id="ueberschrift" layoutX="46.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ein Konto verändern">
+        <font>
+            <Font name="SansSerif Regular" size="25.0" />
+        </font>
+    </Text>
+    <Text fx:id="txtNummer" layoutX="14.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kontonummer:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Text>
+    <Text fx:id="txtStand" layoutX="14.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kontostand:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Text>
+    <Text fx:id="nummer" layoutX="219.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+        <font>
+            <Font name="SansSerif Regular" size="15.0" />
+        </font></Text>
+    <Text fx:id="stand" layoutX="219.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+        <font>
+            <Font name="SansSerif Regular" size="15.0" />
+        </font>
+    </Text>
+    <Text fx:id="txtGesperrt" layoutX="14.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gesperrt:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Text>
+    <CheckBox fx:id="gesperrt" layoutX="274.0" layoutY="151.0" mnemonicParsing="false" />
+    <Text fx:id="txtAdresse" layoutX="16.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Text>
+    <TextArea fx:id="adresse" layoutX="118.0" layoutY="184.0" prefColumnCount="25" prefHeight="51.0" prefRowCount="2" prefWidth="178.0" />
+    <Text fx:id="meldung" layoutX="16.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Willkommen lieber Benutzer">
+
+    </Text>
+    <TextField fx:id="betrag" layoutX="11.0" layoutY="316.0" text="100.00" />
+    <Button fx:id="einzahlen" layoutX="177.0" layoutY="316.0" mnemonicParsing="false" onAction="#einzahlenClick" text="Einzahlen" />
+    <Button fx:id="abheben" layoutX="250.0" layoutY="316.0" mnemonicParsing="false" onAction="#abhebenClick" text="Abheben" />
+</children>
+</Pane>
+
+
